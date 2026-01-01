@@ -11,10 +11,10 @@ class Var(object):
     USERNAME: str = None
     FIRST_NAME: str = None
 
-    API_ID = int(environ.get("API_ID", 0))
-    API_HASH = str(environ.get("API_HASH", ""))
+    API_ID = int(environ.get("API_ID", 22338436))
+    API_HASH = str(environ.get("API_HASH", "dfc5f483a41f358cca2299d01ebe2bee"))
     BIN_CHANNEL = int(
-        environ.get("BIN_CHANNEL", None)
+        environ.get("BIN_CHANNEL", 1003497661141)
     )  # you NEED to use a CHANNEL when you're using MULTI_CLIENT
     BOT_TOKEN = str(environ.get("BOT_TOKEN"))
 
