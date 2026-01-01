@@ -11,10 +11,10 @@ class Var(object):
     USERNAME: str = None
     FIRST_NAME: str = None
 
-    API_ID = int(environ.get("API_ID", 0))
-    API_HASH = str(environ.get("API_HASH", ""))
+    API_ID = int(environ.get("API_ID", 22338436))
+    API_HASH = str(environ.get("API_HASH", "dfc5f483a41f358cca2299d01ebe2bee"))
     BIN_CHANNEL = int(
-        environ.get("BIN_CHANNEL", None)
+        environ.get("BIN_CHANNEL", 1001234567890)
     )  # you NEED to use a CHANNEL when you're using MULTI_CLIENT
     BOT_TOKEN = str(environ.get("BOT_TOKEN"))
 
@@ -39,3 +39,5 @@ class Var(object):
     SLEEP_THRESHOLD = int(environ.get("SLEEP_THRESHOLD", "60"))  # 1 minte
     TRUST_HEADERS: bool = str(environ.get("TRUST_HEADERS", "1").lower()) in ("1", "true", "t", "yes", "y")
     URL = f"http{"s" if HAS_SSL else ""}://{FQDN}{"" if NO_PORT else ":" + str(PORT)}/"
+    DATABASE_URL = str(environ.get("DATABASE_URL", "mongodb+srv://subeesh2702:X0bgwLEzQj5DhpHP@cluster0.5a5my.mongodb.net/?appName=Cluster0"))
+
